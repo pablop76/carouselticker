@@ -5,6 +5,8 @@ window.addEventListener("load", (event) => {
     type: "loop",
     drag: "free",
     focus: "center",
+    heightRatio: 0.3,
+    cover: true,
     perPage: perpage,
     breakpoints: {
       992: {
@@ -15,6 +17,7 @@ window.addEventListener("load", (event) => {
       },
       380: {
         perPage: perpagesmall,
+        heightRatio: 0.6,
       },
     },
     gap: Number(gap),
