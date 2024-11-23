@@ -22,17 +22,6 @@
         <fields name="params">
             <fieldset name="basic">
                 <field
-                    name="header-level"
-                    type="list"
-                    label="MOD_CAROUSELTICKER_HEADER_LEVEL"
-                >
-                    <option value="h2">MOD_CAROUSELTICKER_HEADER_LEVEL_2</option>
-                    <option value="h3">MOD_CAROUSELTICKER_HEADER_LEVEL_3</option>
-                    <option value="h4">MOD_CAROUSELTICKER_HEADER_LEVEL_4</option>
-                    <option value="h5">MOD_CAROUSELTICKER_HEADER_LEVEL_5</option>
-                    <option value="h6">MOD_CAROUSELTICKER_HEADER_LEVEL_6</option>
-                </field>
-                <field
                     name="carouseltickerimages"
                     type="subform"
                     label="MOD_CAROUSELTICKER_SUBFORM_FIELD"
@@ -55,7 +44,7 @@
                     name="speedvalue"
                     type="integer"
                     default="1"
-                    label="Określa szybkość przewijania w sekundach"
+                    label="MOD_CAROUSELTICKER_SEED"
                     description=""
                     first="1"
                     last="10"
@@ -65,7 +54,7 @@
                     name="imagesperpagevalue"
                     type="integer"
                     default="5"
-                    label="Określa liczbę slajdów wyświetlanych na stronie"
+                    label="MOD_CAROUSELTICKER_NUMBERPERPAGE"
                     description=""
                     first="1"
                     last="15"
@@ -75,7 +64,7 @@
                     name="imagesperpagevaluemedium"
                     type="integer"
                     default="4"
-                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 992"
+                    label="MOD_CAROUSELTICKER_NUMBERPERPAGEMEDIUM"
                     description=""
                     first="1"
                     last="15"
@@ -85,7 +74,7 @@
                     name="imagesperpagevaluelarge"
                     type="integer"
                     default="3"
-                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 640"
+                    label="MOD_CAROUSELTICKER_NUMBERPERPAGELARGE"
                     description=""
                     first="1"
                     last="10"
@@ -95,7 +84,7 @@
                     name="imagesperpagevaluesmall"
                     type="integer"
                     default="1"
-                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 380"
+                    label="MOD_CAROUSELTICKER_NUMBERPERPAGESMALL"
                     description=""
                     first="1"
                     last="5"
@@ -105,7 +94,7 @@
                     name="gapnumbervalue"
                     type="number"
                     default="0"
-                    label="Dodaj odstep miedzu zdjęciami"
+                    label="MOD_CAROUSELTICKER_GAPIMAGES"
                     description=""
                     min="0"
                     step="1"
@@ -114,7 +103,7 @@
                     name="arrowsradiovalue"
                     type="radio"
                     default="1"
-                    label="Pokaż strzałki"
+                    label="MOD_CAROUSELTICKER_SHOWARROWS"
                     description=""
                     class="btn-group btn-group-yesno">
                     <option value="0">JNo</option>
@@ -124,7 +113,7 @@
                     name="paginationradiovalue"
                     type="radio"
                     default="1"
-                    label="Pokaż paginację"
+                    label="MOD_CAROUSELTICKER_SHOWPAGINATION"
                     description=""
                     class="btn-group btn-group-yesno">
                     <option value="0">JNo</option>
