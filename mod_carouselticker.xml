@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>Carousel ticker</name>
+    <version>1.0.1</version>
+    <author>pablop76</author>
+    <creationDate>18.11.2024</creationDate>
+    <description>MOD_CAROUSELTICKER_DESCRIPTION</description>
+    <namespace path="src">Pablop\Module\Carouselticker</namespace>
+    <files>
+        <folder module="mod_carouselticker">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <scriptfile>script.php</scriptfile>
+    <media destination="mod_carouselticker" folder="media">
+        <filename>joomla.asset.json</filename>
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="header-level"
+                    type="list"
+                    label="MOD_CAROUSELTICKER_HEADER_LEVEL"
+                >
+                    <option value="h2">MOD_CAROUSELTICKER_HEADER_LEVEL_2</option>
+                    <option value="h3">MOD_CAROUSELTICKER_HEADER_LEVEL_3</option>
+                    <option value="h4">MOD_CAROUSELTICKER_HEADER_LEVEL_4</option>
+                    <option value="h5">MOD_CAROUSELTICKER_HEADER_LEVEL_5</option>
+                    <option value="h6">MOD_CAROUSELTICKER_HEADER_LEVEL_6</option>
+                </field>
+                <field
+                    name="carouseltickerimages"
+                    type="subform"
+                    label="MOD_CAROUSELTICKER_SUBFORM_FIELD"
+                    description="Dodaj kolejny obraz"
+                    multiple="true"
+                    min="1"
+                    max="10"
+                >
+                    <form>
+                        <field
+                            name="myimage"
+                            type="accessiblemedia"
+                            directory="stories"
+                        />
+                    </form>
+                </field>
+            </fieldset>
+            <fieldset name="Additional settings module" label="Ustawienia karuzeli">
+                <field
+                    name="speedvalue"
+                    type="integer"
+                    default="1"
+                    label="Określa szybkość przewijania w sekundach"
+                    description=""
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+                <field
+                    name="imagesperpagevalue"
+                    type="integer"
+                    default="5"
+                    label="Określa liczbę slajdów wyświetlanych na stronie"
+                    description=""
+                    first="1"
+                    last="15"
+                    step="1"
+                />
+                <field
+                    name="imagesperpagevaluemedium"
+                    type="integer"
+                    default="4"
+                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 992"
+                    description=""
+                    first="1"
+                    last="15"
+                    step="1"
+                />
+                <field
+                    name="imagesperpagevaluelarge"
+                    type="integer"
+                    default="3"
+                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 640"
+                    description=""
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+                <field
+                    name="imagesperpagevaluesmall"
+                    type="integer"
+                    default="1"
+                    label="Określa liczbę slajdów wyświetlanych na stronie poniżej punktu przerwania 380"
+                    description=""
+                    first="1"
+                    last="5"
+                    step="1"
+                />
+                <field
+                    name="gapnumbervalue"
+                    type="number"
+                    default="0"
+                    label="Dodaj odstep miedzu zdjęciami"
+                    description=""
+                    min="0"
+                    step="1"
+                />
+                <field
+                    name="arrowsradiovalue"
+                    type="radio"
+                    default="1"
+                    label="Pokaż strzałki"
+                    description=""
+                    class="btn-group btn-group-yesno">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+                <field
+                    name="paginationradiovalue"
+                    type="radio"
+                    default="1"
+                    label="Pokaż paginację"
+                    description=""
+                    class="btn-group btn-group-yesno">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

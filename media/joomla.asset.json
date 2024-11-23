@@ -1,0 +1,57 @@
+{
+    "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+    "name": "mod_carouselticker",
+    "version": "1.0.0",
+    "description": "Joomla Module Tutorial",
+    "license": "GPL-2.0-or-later",
+    "assets": [
+      {
+        "name": "mod_carouselticker.splidejs",
+        "type": "script",
+        "uri": "mod_carouselticker/splide.js",
+        "dependencies": [
+          "jquery"
+        ],
+        "attributes": {
+          "type": "module"
+        },
+        "version": "1.0.0"
+      } ,
+      {
+        "name": "mod_carouselticker.splideautoscrolljs",
+        "type": "script",
+        "uri": "mod_carouselticker/splide-extension-auto-scroll.js",
+        "dependencies": [
+          "jquery"
+        ],
+        "attributes": {
+          "type": "module"
+        },
+        "version": "1.0.0"
+      },
+      {
+        "name": "mod_carouselticker.splideconfigjs",
+        "type": "script",
+        "uri": "mod_carouselticker/splide-config.js",
+        "dependencies": [
+          "jquery"
+        ],
+        "attributes": {
+          "type": "module"
+        },
+        "version": "1.0.0"
+      },
+      {
+        "name": "mod_carouselticker.splidecss",
+        "type": "style",
+        "uri": "mod_carouselticker/splide.min.css",
+        "version": "1.0.0"
+      } ,
+      {
+        "name": "mod_carouselticker.splidethemecss",
+        "type": "style",
+        "uri": "mod_carouselticker/splide-default.min.css",
+        "version": "1.0.0"
+      }
+    ]
+  }
