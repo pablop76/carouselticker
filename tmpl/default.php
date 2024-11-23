@@ -21,6 +21,10 @@ $perpage = $params->get('imagesperpagevalue', '5');
 $perpagemedium = $params->get('imagesperpagevaluemedium', '4');
 $perpagelarge = $params->get('imagesperpagevaluelarge', '3');
 $perpagesmall = $params->get('imagesperpagevaluesmall', '1');
+$ratioimagevalue=$params->get('ratioimagevalue', '2');
+$ratioimagevaluemedium = $params->get('ratioimagevaluemedium', '2');
+$ratioimagevaluelarge = $params->get('ratioimagevaluelarge', '4');
+$ratioimagevaluesmall = $params->get('ratioimagevaluesmall', '6');
 $speed = $params->get('speedvalue', '1');
 
 $document->addScriptOptions('mod_carouselticker.vars', [
@@ -31,7 +35,11 @@ $document->addScriptOptions('mod_carouselticker.vars', [
   'perpagemedium'=>$perpagemedium,
   'perpagelarge'=>$perpagelarge,
   'perpagesmall'=>$perpagesmall,
-  'speed'=>$speed
+  'speed'=>$speed,
+  'ratioimagevalue'=>$ratioimagevalue,
+  'ratioimagevaluemedium'=>$ratioimagevaluemedium,
+  'ratioimagevaluelarge'=>$ratioimagevaluelarge,
+  'ratioimagevaluesmall'=>$ratioimagevaluesmall,
 ]);
 ?>
 <section class="splide" aria-label="Basic Structure Example">

@@ -1,23 +1,38 @@
-const { gap,arrows,pagination,perpage,perpagemedium,perpagelarge,perpagesmall,speed } = Joomla.getOptions('mod_carouselticker.vars');
+const { 
+  gap,
+  arrows,
+  pagination,
+  perpage,
+  perpagemedium,
+  perpagelarge,
+  perpagesmall,
+  speed,
+  ratioimagevalue,
+  ratioimagevaluemedium,
+  ratioimagevaluelarge,
+  ratioimagevaluesmall,
+} = Joomla.getOptions('mod_carouselticker.vars');
 
 window.addEventListener("load", (event) => {
   const splide = new Splide(".splide", {
     type: "loop",
     drag: "free",
     focus: "center",
-    heightRatio: 0.2,
+    heightRatio: ratioimagevalue/10,
     cover: true,
     perPage: perpage,
     breakpoints: {
       992: {
         perPage: perpagemedium,
+        heightRatio: ratioimagevaluemedium/10,
       },
       640: {
         perPage: perpagelarge,
+        heightRatio: ratioimagevaluelarge/10,
       },
       380: {
         perPage: perpagesmall,
-        heightRatio: 0.6,
+        heightRatio: ratioimagevaluesmall/10,
       },
     },
     gap: Number(gap),
