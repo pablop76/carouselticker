@@ -5,7 +5,7 @@ window.addEventListener("load", (event) => {
     type: "loop",
     drag: "free",
     focus: "center",
-    heightRatio: 0.3,
+    heightRatio: 0.2,
     cover: true,
     perPage: perpage,
     breakpoints: {
