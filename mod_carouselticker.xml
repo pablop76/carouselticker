@@ -36,6 +36,30 @@
                             type="accessiblemedia"
                             directory="stories"
                         />
+                        <field
+                            name="urlimagevalue"
+                            type="url"
+                            default=""
+                            label="MOD_CAROUSELTICKER_URLIMAGE"
+                            description="https://www.example.com"
+                            size="30"
+                        />
+                        <field
+                            name="urlimagetextvalue"
+                            type="text"
+                            default=""
+                            label="MOD_CAROUSELTICKER_URLIMAGETEXT"
+                            description="text link"
+                            size="30"
+                        />
+                        <field
+                            name="linktarget"
+                            type="checkbox"
+                            label="MOD_CAROUSELTICKER_LINKTARGET"
+                            description=""
+                            value="1"
+                            checked="0"
+                        />
                     </form>
                 </field>
             </fieldset>
