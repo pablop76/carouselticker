@@ -51,110 +51,129 @@
                     step="1"
                 />
                 <field
-                    type="spacer"
-                    name="myspacer-1"
-                    hr="true"
-                />
-                <field
-                    name="imagesperpagevalue"
-                    type="integer"
-                    default="5"
+                    name="perpagevalue"
+                    type="subform"
                     label="MOD_CAROUSELTICKER_NUMBERPERPAGE"
-                    description=""
-                    first="1"
-                    last="15"
-                    step="1"
-                />
+                    description="Subform Field Description"
+                    multiple="false"
+                    layout="joomla.form.field.subform.repeatable-table"
+                >
+                    <form>
+                        <field
+                            name="imagesperpagevalue"
+                            type="integer"
+                            default="5"
+                            label=""
+                            description=""
+                            first="1"
+                            last="15"
+                            step="1"
+                        />
+                        <field
+                            name="ratioimagevalue"
+                            type="number"
+                            default="1"
+                            label="MOD_CAROUSELTICKER_RATIOIMAGES"
+                            description="For example, when the carousel width is 1000 and the factor is 3, the height will be 300 (1000/0.3)"
+                            min="1"
+                            max="10"
+                            step="0.1"
+                        />
+                    </form>
+                </field>
                 <field
-                    name="ratioimagevalue"
-                    type="number"
-                    default="1"
-                    label="MOD_CAROUSELTICKER_RATIOIMAGES"
-                    description="Determines height of slides by the ratio to the carousel width. For example, when the carousel width is 1000 and the ratio is 3, the height will be 300 (1000/0,3)"
-                    min="1"
-                    max="10"
-                    step="0.1"
-                />
-                <field
-                    type="spacer"
-                    name="myspacer-2"
-                    hr="true"
-                />
-                <field
-                    name="imagesperpagevaluemedium"
-                    type="integer"
-                    default="4"
+                    name="perpagevaluemedium"
+                    type="subform"
                     label="MOD_CAROUSELTICKER_NUMBERPERPAGEMEDIUM"
-                    description=""
-                    first="1"
-                    last="15"
-                    step="1"
-                />
+                    description="Subform Field Description"
+                    multiple="false"
+                    layout="joomla.form.field.subform.repeatable-table"
+                >
+                    <form>
+                        <field
+                            name="imagesperpagevaluemedium"
+                            type="integer"
+                            default="4"
+                            label=""
+                            description=""
+                            first="1"
+                            last="15"
+                            step="1"
+                        />
+                        <field
+                            name="ratioimagevaluemedium"
+                            type="number"
+                            default="1"
+                            label="MOD_CAROUSELTICKER_RATIOIMAGESMEDIUM"
+                            description="For example, when the carousel width is 1000 and the factor is 3, the height will be 300 (1000/0.3)"
+                            min="1"
+                            max="10"
+                            step="0.1"
+                        />
+                    </form>
+                </field>
                 <field
-                    name="ratioimagevaluemedium"
-                    type="number"
-                    default="1"
-                    label="MOD_CAROUSELTICKER_RATIOIMAGESMEDIUM"
-                    description="Determines height of slides by the ratio to the carousel width. For example, when the carousel width is 1000 and the ratio is 3, the height will be 300 (1000/0,3)"
-                    min="1"
-                    max="10"
-                    step="0.1"
-                />
-                <field
-                    type="spacer"
-                    name="myspacer-3"
-                    hr="true"
-                />
-                <field
-                    name="imagesperpagevaluelarge"
-                    type="integer"
-                    default="3"
+                    name="perpagevaluelarge"
+                    type="subform"
                     label="MOD_CAROUSELTICKER_NUMBERPERPAGELARGE"
-                    description=""
-                    first="1"
-                    last="10"
-                    step="1"
-                />
+                    description="Subform Field Description"
+                    multiple="false"
+                    layout="joomla.form.field.subform.repeatable-table"
+                >
+                    <form>
+                        <field
+                            name="imagesperpagevaluelarge"
+                            type="integer"
+                            default="3"
+                            label=""
+                            description=""
+                            first="1"
+                            last="10"
+                            step="1"
+                        />
+                        <field
+                            name="ratioimagevaluelarge"
+                            type="number"
+                            default="1"
+                            label="MOD_CAROUSELTICKER_RATIOIMAGESLARGE"
+                            description="For example, when the carousel width is 1000 and the factor is 3, the height will be 300 (1000/0.3)"
+                            min="1"
+                            max="10"
+                            step="0.1"
+                        />
+                    </form>
+                </field>
                 <field
-                    name="ratioimagevaluelarge"
-                    type="number"
-                    default="1"
-                    label="MOD_CAROUSELTICKER_RATIOIMAGESLARGE"
-                    description="Determines height of slides by the ratio to the carousel width. For example, when the carousel width is 1000 and the ratio is 3, the height will be 300 (1000/0,3)"
-                    min="1"
-                    max="10"
-                    step="0.1"
-                />
-                <field
-                    type="spacer"
-                    name="myspacer-4"
-                    hr="true"
-                />
-                <field
-                    name="imagesperpagevaluesmall"
-                    type="integer"
-                    default="1"
+                    name="perpagevaluesmall"
+                    type="subform"
                     label="MOD_CAROUSELTICKER_NUMBERPERPAGESMALL"
-                    description=""
-                    first="1"
-                    last="5"
-                    step="1"
-                />
-                <field
-                    name="ratioimagevaluesmall"
-                    type="number"
-                    default="1"
-                    label="MOD_CAROUSELTICKER_RATIOIMAGESSMALL"
-                    description="Determines height of slides by the ratio to the carousel width. For example, when the carousel width is 1000 and the ratio is 3, the height will be 300 (1000/0,3)"
-                    min="1"
-                    max="10"
-                    step="0.1"
-                />
-                <field
-                    type="spacer"
-                    name="myspacer-5"
-                    hr="true"
-                />
+                    description="Subform Field Description"
+                    multiple="false"
+                    layout="joomla.form.field.subform.repeatable-table"
+                >
+                    <form>
+                        <field
+                            name="imagesperpagevaluesmall"
+                            type="integer"
+                            default="1"
+                            label=""
+                            description=""
+                            first="1"
+                            last="5"
+                            step="1"
+                        />
+                        <field
+                            name="ratioimagevaluesmall"
+                            type="number"
+                            default="1"
+                            label="MOD_CAROUSELTICKER_RATIOIMAGESSMALL"
+                            description="For example, when the carousel width is 1000 and the factor is 3, the height will be 300 (1000/0.3)"
+                            min="1"
+                            max="10"
+                            step="0.1"
+                        />
+                    </form>
+                </field>
                 <field
                     name="gapnumbervalue"
                     type="number"

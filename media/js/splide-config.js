@@ -2,15 +2,12 @@ const {
   gap,
   arrows,
   pagination,
-  perpage,
-  perpagemedium,
-  perpagelarge,
-  perpagesmall,
+  perpagevalue,
+  perpagevaluemedium,
+  perpagevaluelarge,
+  perpagevaluesmall,
   speed,
-  ratioimagevalue,
-  ratioimagevaluemedium,
-  ratioimagevaluelarge,
-  ratioimagevaluesmall,
+
 } = Joomla.getOptions('mod_carouselticker.vars');
 
 window.addEventListener("load", (event) => {
@@ -18,21 +15,21 @@ window.addEventListener("load", (event) => {
     type: "loop",
     drag: "free",
     focus: "center",
-    heightRatio: ratioimagevalue/10,
+    heightRatio: perpagevalue['ratioimagevalue']/10,
     cover: true,
-    perPage: perpage,
+    perPage: perpagevalue['imagesperpagevalue'],
     breakpoints: {
-      992: {
-        perPage: perpagemedium,
-        heightRatio: ratioimagevaluemedium/10,
+      960: {
+        perPage: perpagevaluemedium['imagesperpagevaluemedium'],
+        heightRatio: perpagevaluemedium['ratioimagevaluemedium']/10,
       },
-      640: {
-        perPage: perpagelarge,
-        heightRatio: ratioimagevaluelarge/10,
+      768: {
+        perPage: perpagevaluelarge['imagesperpagevaluelarge'],
+        heightRatio: perpagevaluelarge['ratioimagevaluelarge']/10,
       },
-      380: {
-        perPage: perpagesmall,
-        heightRatio: ratioimagevaluesmall/10,
+      480: {
+        perPage: perpagevaluesmall['imagesperpagevaluesmall'],
+        heightRatio: perpagevaluesmall['ratioimagevaluesmall']/10,
       },
     },
     gap: Number(gap),
