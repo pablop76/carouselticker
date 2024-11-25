@@ -64,7 +64,7 @@ foreach ($carouseltickerimages as $key => $carouselItem) {
   <div class="position-relative splide__slide__container">
     <?php echo LayoutHelper::render('joomla.html.image', $layoutAttr); ?>
   </div>
-    <?php if (!empty($urlimagevalue)) {?><a target="<?php echo $linktarget ?>" class="text-white position-absolute top-50 start-50 translate-middle" href="<?php echo $urlimagevalue ?>"><?php echo $urlimagetextvalue ?></a> <?php }?>
+    <?php if (!empty($urlimagevalue)) {?><a target="<?php echo $linktarget ?>" class="splide_slide_overlay" href="<?php echo $urlimagevalue ?>"><?php echo $urlimagetextvalue ?></a> <?php }?>
   </li>
 <?php
 }
