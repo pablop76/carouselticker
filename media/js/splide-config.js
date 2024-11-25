@@ -27,7 +27,7 @@ window.addEventListener("load", (event) => {
         perPage: perpagevaluelarge['imagesperpagevaluelarge'],
         heightRatio: perpagevaluelarge['ratioimagevaluelarge']/10,
       },
-      80: {
+      380: {
         perPage: perpagevaluesmall['imagesperpagevaluesmall'],
         heightRatio: perpagevaluesmall['ratioimagevaluesmall']/10,
       },
