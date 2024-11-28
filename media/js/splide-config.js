@@ -39,6 +39,4 @@ window.addEventListener("load", (event) => {
       speed: Number(speed),
     },
   }).mount(window.splide.Extensions);
-
-  splide.mount();
 });
